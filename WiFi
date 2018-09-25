@@ -1,0 +1,8 @@
+ip link set wlan0 up
+ip link show wlan0
+iw wlan0 link
+wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf
+iw wlan0 link
+dhclient wlan0
+ip addr show wlan0
+ping 8.8.8.8
