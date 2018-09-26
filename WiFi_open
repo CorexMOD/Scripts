@@ -4,7 +4,6 @@ read WiFi
 ip link set wlan0 up
 ip link show wlan0
 iw wlan0 link
-echo -n "Vvedite parol "
 iwconfig wlan0 essid $WiFi
 iw wlan0 link
 dhclient wlan0
