@@ -26,6 +26,7 @@ cd hcxtools
 apt-get -y install libssl-dev libcurl4-openssl-dev zlib1g-dev
 make
 make install
+cd ~
 rm -r hcxdumptool && rm -r hcxtools
 
 #wget https://github.com/CorexMOD/Scripts/raw/master/hashcat-4.2.1.zip
