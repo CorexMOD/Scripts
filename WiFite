@@ -27,10 +27,18 @@ apt-get -y install libssl-dev libcurl4-openssl-dev zlib1g-dev
 make
 make install
 rm -r hcxdumptool && rm -r hcxtools
-git clone https://github.com/hashcat/hashcat.git
-cd hashcat
-apt-get -y install opencl-headers
-make
-make install
-cd ..
-rm -r hashcat
+
+#wget https://github.com/CorexMOD/Scripts/raw/master/hashcat-4.2.1.zip
+#unzip hashcat-4.2.1.zip
+#cd hashcat-4.2.1
+#chmod +x hashcat32.bin
+#cp  hashcat32.bin /usr/bin/
+#ln -s /usr/bin/hashcat32.bin /usr/bin/hashcat
+
+#git clone https://github.com/hashcat/hashcat.git
+#cd hashcat
+#apt-get -y install opencl-headers
+#make
+#make install
+#cd ..
+#rm -r hashcat
