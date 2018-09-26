@@ -1,0 +1,36 @@
+apt-get -y install wifite
+mkdir /usr/share/wfuzz/wordlist/fuzzdb
+mkdir /usr/share/wfuzz/wordlist/fuzzdb/wordlists-user-passwd
+mkdir /usr/share/wfuzz/wordlist/fuzzdb/wordlists-user-passwd/passwds/
+wget https://github.com/CorexMOD/Scripts/raw/master/Dict.zip
+unzip Dict.zip
+rm Dict.zip
+cp small.txt /usr/share/wfuzz/wordlist/fuzzdb/wordlists-user-passwd/passwds/phpbb.txt
+apt-get -y install macchanger
+apt-get -y install build-essential libpcap-dev aircrack-ng pixiewps
+git clone https://github.com/aanarchyy/bully
+cd bully*/
+cd src/
+make
+sudo make install
+cd ~
+rm -r bully
+apt-get -y install pyrit
+git clone https://github.com/ZerBea/hcxdumptool.git
+cd hcxdumptool
+make
+make install
+cd ~
+git clone https://github.com/ZerBea/hcxtools.git
+cd hcxtools
+apt-get -y install libssl-dev libcurl4-openssl-dev zlib1g-dev
+make
+make install
+rm -r hcxdumptool && rm -r hcxtools
+git clone https://github.com/hashcat/hashcat.git
+cd hashcat
+apt-get -y install opencl-headers
+make
+make install
+cd ..
+rm -r hashcat
