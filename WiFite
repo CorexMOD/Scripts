@@ -1,4 +1,6 @@
 apt-get -y install wifite
+mkdir /usr/share/wfuzz
+mkdir /usr/share/wfuzz/wordlist
 mkdir /usr/share/wfuzz/wordlist/fuzzdb
 mkdir /usr/share/wfuzz/wordlist/fuzzdb/wordlists-user-passwd
 mkdir /usr/share/wfuzz/wordlist/fuzzdb/wordlists-user-passwd/passwds/
